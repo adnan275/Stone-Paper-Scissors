@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock vs Paper vs Scissor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Who Will Win? Stone, Paper, or Scissor!</h1>
+    </header>
+    <main>
+      <section class="selection-area">
+        <button class="choice" id="stone-choice">
+          <img src="./stone.png" alt="Stone" />
+          <span>Stone</span>
+        </button>
+        <button class="choice" id="paper-choice">
+          <img src="./paper.png" alt="Paper" />
+          <span>Paper</span>
+        </button>
+        <button class="choice" id="scissor-choice">
+          <img src="./scissor.png" alt="Scissor" />
+          <span>Scissor</span>
+        </button>
+      </section>
+
+      <section class="score-section">
+        <div class="score-container">
+          <p id="player-points">0</p>
+          <p>Player</p>
+        </div>
+        <div class="score-container">
+          <p id="computer-points">0</p>
+          <p>Computer</p>
+        </div>
+      </section>
+
+      <section class="result-message">
+        <p id="status-msg">Pick one and let's battle it out!</p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
