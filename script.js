@@ -16,7 +16,7 @@ function playGame(playerChoice) {
 
   if (playerChoice === computerChoice) {
     statusMessage.innerText = "It's a tie! Try again.";
-    statusMessage.style.backgroundColor = "darkblue";
+    statusMessage.style.color = "#fbbf24";
     return;
   }
 
@@ -27,12 +27,12 @@ function playGame(playerChoice) {
     playerScore++;
     playerScoreEl.innerText = playerScore;
     statusMessage.innerText = `You win! ${playerChoice} beats ${computerChoice}.`;
-    statusMessage.style.backgroundColor = "green";
+    statusMessage.style.color = "#4ade80";
   } else {
     computerScore++;
     computerScoreEl.innerText = computerScore;
     statusMessage.innerText = `You lost! ${computerChoice} beats ${playerChoice}.`;
-    statusMessage.style.backgroundColor = "red";
+    statusMessage.style.color = "#f87171";
   }
 }
 

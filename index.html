@@ -1,44 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Rock vs Paper vs Scissor</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Who Will Win? Stone, Paper, or Scissor!</h1>
-    </header>
-    <main>
-      <section class="selection-area">
-        <button class="choice" id="stone-choice">
-          <img src="./stone.png" alt="Stone" />
-          <span>Stone</span>
-        </button>
-        <button class="choice" id="paper-choice">
-          <img src="./paper.png" alt="Paper" />
-          <span>Paper</span>
-        </button>
-        <button class="choice" id="scissor-choice">
-          <img src="./scissor.png" alt="Scissor" />
-          <span>Scissor</span>
-        </button>
-      </section>
+    <div class="game-container">
+      <header>
+        <h1>Rock Paper Scissors</h1>
+        <p>Choose your weapon!</p>
+      </header>
+      
+      <main>
+        <section class="score-board">
+            <div class="score-card player">
+                <span class="score-label">Player</span>
+                <span id="player-points" class="score-value">0</span>
+            </div>
+            <div class="score-divider">:</div>
+            <div class="score-card computer">
+                <span class="score-label">Computer</span>
+                <span id="computer-points" class="score-value">0</span>
+            </div>
+        </section>
 
-      <section class="score-section">
-        <div class="score-container">
-          <p id="player-points">0</p>
-          <p>Player</p>
-        </div>
-        <div class="score-container">
-          <p id="computer-points">0</p>
-          <p>Computer</p>
-        </div>
-      </section>
+        <section class="selection-area">
+          <button class="choice" id="stone-choice">
+            <div class="img-container">
+                <img src="./stone.png" alt="Stone" />
+            </div>
+            <span>Stone</span>
+          </button>
+          <button class="choice" id="paper-choice">
+            <div class="img-container">
+                <img src="./paper.png" alt="Paper" />
+            </div>
+            <span>Paper</span>
+          </button>
+          <button class="choice" id="scissor-choice">
+            <div class="img-container">
+                <img src="./scissor.png" alt="Scissor" />
+            </div>
+            <span>Scissor</span>
+          </button>
+        </section>
 
-      <section class="result-message">
-        <p id="status-msg">Pick one and let's battle it out!</p>
-      </section>
-    </main>
+        <section class="result-message">
+          <p id="status-msg">Ready to fight?</p>
+        </section>
+      </main>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
